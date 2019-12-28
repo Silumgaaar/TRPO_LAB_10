@@ -1,21 +1,39 @@
 #include <iostream> 
 using namespace std;
-int Addition(int a, int b)
+void Addition(int a, int b)
 {
-	int c = a + b;
-	return c;
+	int c;
+	if (a && b)
+	{
+		c = a + b;
+		cout << c;
+	}
+	else
+	{
+		cout << "Неверный ввод";
+	}
 }
-int subtraction(int a, int b)
+void subtraction(int a, int b)
 {
-	int c = a - b;
-	return c;
+	int c;
+	if (a && b)
+	{
+		c = a + b;
+		cout << c;
+	}
+	else
+	{
+		cout << "Неверный ввод";
+	}
 }
 
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	int a, b;
 	cin >> a;
 	cin >> b;
-	cout << Addition(a, b);
+	Addition(a, b);
+	subtraction(a, b);
 
 }
